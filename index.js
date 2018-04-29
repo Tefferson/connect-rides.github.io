@@ -157,14 +157,12 @@ $(function () {
 
   function loadGroups() {
     const uid = getUser().uid
-    console.log('oi', uid)
     database
       .ref('users/' + uid + '/groups')
       .orderByValue()
       .once('value', function (snapshot) {
         $groupList.html('')
         snapshot.forEach(({key}) => {
-          console.log(key, 'key')
           const $li = $('<li></li>')
             .addClass('li-my-groups')
             .click(showMembers)
