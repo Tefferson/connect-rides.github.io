@@ -1,6 +1,6 @@
 $(function () {
 
-  const userURL = 'http://res.cloudinary.com/dmjs99ysw/image/upload/v1524966197/man-user_f9lr0r.png'
+  const userURL = 'https://res.cloudinary.com/dmjs99ysw/image/upload/v1524966197/man-user_f9lr0r.png'
 
   const $header = $('#header')
   const $body = $('#body')
